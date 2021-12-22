@@ -1,5 +1,3 @@
-[rsschool-cv](https://github.com/nillks/rsschool-cv)
-
 # Daniil Troyanov - Junior Front-end developer
 
 ## My contact information
