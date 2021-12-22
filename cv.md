@@ -24,14 +24,14 @@ I am an ordinary cheerful guy. I can tell you a joke about a stool.
 * Photoshop
 
 ## Code Example
-'''
+```
 function sum(a, b) {
   return a + b;
 }
 
 let result = sum(1, 2);
 console.log(result);
-'''
+```
 
 ## Experience
 My amazing works are not yet available, but they will be here soon!
