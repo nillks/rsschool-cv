@@ -39,3 +39,6 @@ My amazing works are not yet available, but they will be here soon!
 
 ## English
 A2 (I once took an English language course in English)
+
+[![The Rolling Scopes School](https://rs.school/images/rs_school.svg)](https://rs.school/){style=text-align:center}
+
