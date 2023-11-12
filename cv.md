@@ -21,3 +21,13 @@ Greetings, Earthlings! I'm Daniil Troyanov, your friendly neighborhood aspiring 
 - Git, GitHub
 - VS Code
 - Adobe Photoshop, Illustrator (for when I need to design a pixel-perfect lightsaber)
+
+## Code Examples
+
+```
+function greet() {
+  return 'Hello, world!';
+}
+```
+
+_Stay tuned for my master class, but it's on a "soonish" schedule._
