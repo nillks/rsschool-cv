@@ -42,7 +42,3 @@ They say knowledge is power, but I've got enough electricity in my code. Who nee
 
 ## English Language
 My English is at the A2 level, but trust me, the best jokes are yet to come. The language of programming is universal, and my code speaks volumes.
-
-## Образование
-
-My English is at the A2 level, but trust me, the best jokes are yet to come. The language of programming is universal, and my code speaks volumes.
