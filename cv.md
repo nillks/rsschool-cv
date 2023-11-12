@@ -31,3 +31,18 @@ function greet() {
 ```
 
 _Stay tuned for my master class, but it's on a "soonish" schedule._
+
+## Work Experience
+
+I once told a compiler a joke, and it laughed so hard that it generated a runtime error. That's why there's no official record of my work yet - I'm still debugging the universe.
+
+## Education
+
+They say knowledge is power, but I've got enough electricity in my code. Who needs formal education when you're on a first-name basis with Stack Overflow and have a black belt in coding katas?
+
+## English Language
+My English is at the A2 level, but trust me, the best jokes are yet to come. The language of programming is universal, and my code speaks volumes.
+
+## Образование
+
+My English is at the A2 level, but trust me, the best jokes are yet to come. The language of programming is universal, and my code speaks volumes.
