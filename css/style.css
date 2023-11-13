@@ -6,11 +6,17 @@
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
 :root {
   --main-bg-color: #222831;
   --main-font-color: rgba(238, 238, 238, 0.75);
   --accent-color: #00ADB5;
-  --link-color: #fff;
+  --light-color: #fff;
+  --dark-color: rgba(57, 62, 70, 0.75);
   --border-color: rgba(238, 238, 238, 0.10);
 }
 
@@ -69,13 +75,12 @@ header {
 }
 
 .header__nav-link {
-  color: var(--link-color);
+  color: var(--light-color);
   font-family: Poppins;
-  font-size: 18px;
+  font-size: 1em;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  text-decoration: none;
 }
 
 .header__logo-link,
@@ -87,4 +92,91 @@ header {
 .header__nav-link:hover {
   opacity: .6;
   cursor: pointer;
+}
+
+.about__title {
+  padding-top: 150px;
+  max-width: 720px;
+  color: var(--light-color);
+  font-family: Poppins;
+  font-size: 3.6em;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 96px; /* 150% */
+}
+
+.about__title-decoration {
+  color: var(--accent-color);
+}
+
+.about__link-find {
+  background-color: var(--accent-color);
+  color: var(--light-color);
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 10px 32px;
+  border-radius: 24px;
+  margin-right: 24px;
+  transition: all .8s;
+  margin-top: 48px;
+}
+
+.about__link-find:hover {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50);
+  opacity: .6;
+}
+
+.about__link-cv {
+  display: inline-flex;
+  grid-gap: 0 15px;
+  align-items: center;
+  border-radius: 24px;
+  background-color: var(--dark-color);
+  backdrop-filter: blur(2px);
+  color: var(--light-color);
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 10px 32px;
+  transition: all .8s;
+}
+
+.about__link-cv:hover {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50);
+  opacity: .7;
+}
+
+.about__link-img {
+  display: inline-block;
+}
+
+.about {
+  padding-left: 85px;
+  background-image: url(../img/bg__about.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: right;
+  background-position-y: bottom;
+}
+
+.about__title {
+  position: relative;
+}
+
+.about__title::before {
+  position: absolute;
+  content: '';
+  background-repeat: no-repeat;
+  left: -85px;
+  bottom: -85px;
+  width: 89.962px;
+  height: 221.69px;
+  background-image: url(../img/arrow.svg);
+}
+
+.about__link {
+  padding-top: 32px;
 }
