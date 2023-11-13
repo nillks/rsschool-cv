@@ -180,3 +180,77 @@ header {
 .about__link {
   padding-top: 32px;
 }
+
+.about__info {
+  padding-top: 85px;
+  padding-left: 180px;
+  margin-bottom: 250px;
+}
+
+.about__info--link {
+  display: block;
+  width: 96px;
+  height: 96px;
+  background-color: var(--dark-color);
+  backdrop-filter: blur(4px);
+  padding: 30px 38px;
+}
+
+.bio {
+  background-image: url(../img/bg__bio.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: right;
+  background-position-y: bottom;
+  padding-bottom: 300px;
+}
+
+.bio__title {
+  position: relative;
+  padding-top: 75px;
+  padding-bottom: 40px;
+  color: var(--light-color);
+  font-size: 3.6em;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.bio__title::after {
+  content: '';
+  position: absolute;
+  background-image: url(../img/music__bio.svg);
+  background-repeat: no-repeat;
+  width: 61.543px;
+  height: 46.573px;
+  left: 0;
+  top: -75px;
+}
+
+.bio__title::before {
+  content: '';
+  position: absolute;
+  background-image: url(../img/lightbulb.svg);
+  background-repeat: no-repeat;
+  width: 80px;
+  height: 120px;
+  bottom: -28px;
+  left: 349px;
+}
+
+.bio__info {
+  max-width: 400px;
+  text-align: justify;
+  position: relative;
+}
+
+.bio__info::before {
+  content: '';
+  position: absolute;
+  background-image: url(../img/arrrow__bio.svg);
+  background-repeat: no-repeat;
+  width: 167.721px;
+  height: 186.886px;
+  bottom: -280px;
+  left: 238px;
+}
