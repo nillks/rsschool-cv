@@ -21,6 +21,8 @@ a {
   --btn-color: rgba(57, 62, 70, 0.5);
 }
 
+
+
 body {
   background-color: var(--main-bg-color);
   display: flex;
@@ -33,6 +35,7 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  overflow-x: hidden;
 }
 
 header {
@@ -293,6 +296,10 @@ header {
   width: 89.962px;
   height: 221.69px;
   background-image: url(../img/arrow__work.svg);
+}
+
+.works__disc.arrow-style::before {
+  background-image: url(../img/arrow__work2.svg);
 }
 
 .works__dics-decoration {
