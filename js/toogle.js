@@ -108,19 +108,19 @@ function changeThemex() {
 }
 
 function getThemeFromLocalStorage() {
-  return JSON.parse(localStorage.getItem("theme"));
+  return localStorage.getItem("theme");
 }
 
 function setThemeToLocalStorage(targetCX) {
   localStorage.setItem("theme", JSON.stringify({ targetCX }));
 }
 
+// При загрузке страницы, проверяем сохраненную тему
 const savedTheme = getThemeFromLocalStorage();
 
 if (savedTheme) {
-  const { targetCX } = savedTheme;
+  const { targetCX } = JSON.parse(savedTheme);
   circleElement.setAttribute("cx", targetCX + "%");
-  changeThemex(); // Для визуального обновления темы
 }
 
 themeSwitch.addEventListener("click", changeTheme);

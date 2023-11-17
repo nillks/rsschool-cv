@@ -6,6 +6,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   text-decoration: none;
   cursor: pointer;
@@ -20,8 +24,6 @@ a {
   --border-color: rgba(238, 238, 238, 0.1);
   --btn-color: rgba(57, 62, 70, 0.5);
 }
-
-
 
 body {
   background-color: var(--main-bg-color);
@@ -97,8 +99,11 @@ header {
   opacity: 0.6;
   cursor: pointer;
 }
-
 .about__title {
+  padding-top: 150px;
+}
+.about__title,
+.about__title-decoration  {
   padding-top: 150px;
   max-width: 720px;
   color: var(--light-color);
@@ -111,6 +116,7 @@ header {
 
 .about__title-decoration {
   color: var(--accent-color);
+  padding: 0;
 }
 
 .about__link-find {
@@ -172,6 +178,8 @@ header {
 
 .about__title::before {
   position: absolute;
+  opacity: 0.05;
+  transition: opacity 2s; /* Длительность и тип анимации */
   content: "";
   background-repeat: no-repeat;
   left: -85px;
@@ -198,6 +206,20 @@ header {
   background-color: var(--dark-color);
   backdrop-filter: blur(4px);
   padding: 30px 38px;
+}
+
+.jump {
+  animation: jumpAnimation 0.5s infinite alternate;
+}
+
+@keyframes jumpAnimation {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
 }
 
 .bio {
@@ -395,9 +417,41 @@ header {
 
 .footer__list-link {
   color: var(--light-color);
-  transition: all .8s;
+  transition: all 0.8s;
 }
 
 .footer__list-link:hover {
   color: var(--accent-color);
+}
+
+.find__info-text,
+.cv__info-text {
+  position: sticky;
+  transition: all 0.8s;
+  top: 0;
+  background-color: var(--dark-color);
+  text-align: justify;
+  color: #fff;
+  line-height: 2em;
+  margin: 50px 0;
+  backdrop-filter: blur(5px);
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  padding: 0;
+}
+
+.find-decoration {
+  color: var(--accent-color);
+}
+
+.find__info-close,
+.cv__info-close {
+  display: block;
+  font-size: 25px;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 999; 
 }
