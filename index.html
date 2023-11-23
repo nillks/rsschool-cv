@@ -17,7 +17,7 @@
       <div class="container">
         <div class="header__top">
           <div class="header__logo">
-            <a class="header__logo-link" href="#">
+            <a class="header__logo-link" href="#" id="main">
               <svg
                 class="header__logo-img"
                 width="150"
@@ -35,10 +35,10 @@
           <nav class="header__nav">
             <ul class="header__nav-list">
               <li class="header__nav-item">
-                <a class="header__nav-link" href="#"> Главная </a>
+                <a class="header__nav-link" href="#main"> Главная </a>
               </li>
               <li class="header__nav-item">
-                <a class="header__nav-link" href="#"> Кто я? </a>
+                <a class="header__nav-link" href="#me"> Кто я? </a>
               </li>
               <li class="header__nav-item">
                 <a class="header__nav-link" href="#"> Контакты </a>
@@ -184,7 +184,7 @@
       </div>
       <div class="container">
         <section class="bio" id="down">
-          <h2 class="bio__title">Кто я?</h2>
+          <h2 class="bio__title" id="me">Кто я?</h2>
           <p class="bio__info">
             Приветствую, земляне! Я Даниил Троянов, ваш дружелюбный амбициозный
             Джедай-фронтендер. Мои навыки программирования острее, чем световой
@@ -212,13 +212,14 @@
             ждите, скоро увидите, как я буду танцевать с кодом!
           </p>
           <button class="work__btn active" type="button">All</button>
-          <button class="work__btn" type="button">UI</button>
-          <button class="work__btn" type="button">UX</button>
-          <button class="work__btn" type="button">Web Designl</button>
+          <button class="work__btn" type="button" data-work="UI">UI</button>
+          <button class="work__btn" type="button" data-work="UX">UX</button>
+          <button class="work__btn" type="button" data-work="WEB">Web Design</button>
           <div class="works__container">
             <div class="works__container-element">
               <h3 class="works__container-title">Какая-то технология</h3>
               <img src="./img/work1.png" alt="work1" />
+              <a href="#" class="works__container-link">Подробнее</a>
             </div>
             <div class="works__container-element">
               <h3 class="works__container-title">Какая-то технология</h3>
@@ -277,6 +278,7 @@
         </ul>
       </div>
     </footer>
+    <script src="./js/work.js"></script>
     <script src="./js/writeText.js"></script>
     <script src="./js/cv.js"></script>
     <script src="./js/toogle.js"></script>

@@ -329,6 +329,7 @@ header {
 }
 
 .work__btn {
+  transition: all .9s;
   color: var(--light-color);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
   font-size: 1em;
@@ -345,6 +346,17 @@ header {
 
 .work__btn.active {
   background-color: var(--accent-color);
+}
+
+.works__container-link {
+  background-color: var(--accent-color);
+  display: block;
+  padding: 15px;
+  margin: 0 auto;
+  color: var(--light-color);
+  border-radius: 25px;
+  margin-top: 25px;
+  text-align: center;
 }
 
 .works__container {
