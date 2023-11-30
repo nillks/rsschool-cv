@@ -13,6 +13,10 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
+    <div class="preloader">
+      <p>До загрузки самого лучшего резюме осталось <span>5</span> секунд</p>
+    </div>
+
     <header class="header">
       <div class="container">
         <div class="header__top">
@@ -41,7 +45,7 @@
                 <a class="header__nav-link" href="#me"> Кто я? </a>
               </li>
               <li class="header__nav-item">
-                <a class="header__nav-link" href="#"> Контакты </a>
+                <a class="header__nav-link" href="#contacts"> Контакты </a>
               </li>
             </ul>
           </nav>
@@ -211,24 +215,64 @@
             посмотрите, что я уже могу на JavaScript. Кнопочки это весело, но
             ждите, скоро увидите, как я буду танцевать с кодом!
           </p>
-          <button class="work__btn active" type="button">All</button>
+          <button class="work__btn active" type="button" data-work="ALL">
+            All
+          </button>
           <button class="work__btn" type="button" data-work="UI">UI</button>
           <button class="work__btn" type="button" data-work="UX">UX</button>
-          <button class="work__btn" type="button" data-work="WEB">Web Design</button>
+          <button class="work__btn" type="button" data-work="WEB">Web</button>
           <div class="works__container">
-            <div class="works__container-element">
-              <h3 class="works__container-title">Какая-то технология</h3>
+            <!-- <div class="works__container-element" data-work="UI">
+              <h3 class="works__container-title">Какая-то UI технология</h3>
               <img src="./img/work1.png" alt="work1" />
               <a href="#" class="works__container-link">Подробнее</a>
             </div>
-            <div class="works__container-element">
-              <h3 class="works__container-title">Какая-то технология</h3>
+            <div class="works__container-element" data-work="UX">
+              <h3 class="works__container-title">Какая-то UX технология</h3>
               <img src="./img/work1.png" alt="work1" />
             </div>
-            <div class="works__container-element">
-              <h3 class="works__container-title">Какая-то технология</h3>
+            <div class="works__container-element" data-work="WEB">
+              <h3 class="works__container-title">Какая-то WEB технология</h3>
               <img src="./img/work1.png" alt="work1" />
+            </div> -->
+          </div>
+
+          <div class="dogs">
+            <video
+              id="myVideo"
+              width="640"
+              height="360"
+              controls
+              muted
+              autoplay
+            >
+              <source src="./video/dog.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <div class="text">
+              <p>
+                Приветствую вас в мире моего кода, где каждый щелчок мыши — это
+                шанс встретить срущего французского бульдога (на самом деле я
+                решил не подвергать вас кодовому стрессу и выбрал смешное видео
+                с французским бульдогом, который вместо кода предпочитает
+                создавать искусство)! Почему именно бульдог, а не технологии? Да
+                потому что, как и в программировании, в жизни нужно добавлять
+                немного неожиданности и юмора.
+              </p>
+              <p>
+                Этот бульдог — мой неоценимый партнер в киберпространстве.
+                Вместо того чтобы скучно расписывать технологический стек, я
+                решил представить его в виде бульдога, потому что, как и с
+                кодом, с ним нужно заботиться, понимать, и иногда... чуть-чуть
+                удивляться.
+              </p>
+              <p>
+                Он считает, что программирование — это искусство, и какой же
+                артист не любит немного шалить? Поэтому, вместо обычных строк
+                кода, представьте себе его шедевры на клавиатуре.
+              </p>
             </div>
+            <div class="close__btn-dog">x</div>
           </div>
         </div>
       </section>
@@ -255,8 +299,60 @@
           </div>
         </div>
       </section>
+      <section class="price">
+        <div class="container">
+          <h2 class="price__tiltle">Сколько вы мне должны платить?</h2>
+          <div class="price__text">
+            <p class="price_disc">
+              Дорогие коллеги, вы, конечно, понимаете, что
+              высококвалифицированный специалист, как я, должен получать не
+              меньше, чем главный директор за то, что я умею делать. Ведь собака
+              себя сама не прокормит, пиво само не купится, сигареты сами не
+              купятся, а жена, как вы знаете, сама не наркомится.
+            </p>
+            <p class="price_disc">
+              И хотя я патриот своей страны, но, признайтесь, тенге не самая
+              стабильная валюта. Поэтому, ради экономической стабильности,
+              предлагаю зарплату начислять исключительно в долларах. Не зря же
+              говорят, что валюта могла бы быть стабильнее, чем моя жизнь.
+            </p>
+            <p class="price_disc">
+              Чтобы я, как ваш сотрудник, не страдал от стрессов, я подготовил
+              калькулятор, который покажет, сколько вы мне должны платить.
+              Надеюсь, он будет вас удовлетворять, как и меня. И помните, деньги
+              не приносят счастья, но с ними можно купить много вещей, которые
+              приближают наше счастье.
+            </p>
+          </div>
+
+          <div class="calculator">
+            <div class="calculator__block calculator__block--hours">
+              <label class="calculator__label" for="hours"
+                >Сколько часов я буду работать в месяц?</label
+              >
+              <input
+                type="range"
+                id="hours"
+                name="hours"
+                min="0"
+                max="100"
+                value="0"
+                class="calculator__slider"
+              />
+              <span class="calculator__hours">0 часов</span>
+            </div>
+
+            <div class="calculator__block calculator__block--payment">
+              <label class="calculator__label" for="payment"
+                >Сколько за это вы должны платить?</label
+              >
+              <span class="calculator__currency">$</span>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="contacts">
       <div class="container">
         <h2 class="footer__title">Связаться со мной можно тут:</h2>
         <ul class="footer__list">
@@ -284,5 +380,9 @@
     <script src="./js/toogle.js"></script>
     <script src="./js/down.js"></script>
     <script src="./js/findMe.js"></script>
+    <script src="./js/video.js"></script>
+    <script src="./js/skills.js"></script>
+    <script src="./js/calculate.js"></script>
+    <script src="./js/preloader.js"></script>
   </body>
 </html>
